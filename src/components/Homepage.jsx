@@ -1,9 +1,13 @@
 import React from 'react'
+import Navigation from './Navigation'
 
 function Homepage() {
-  return (
-    <div>Homepage</div>
-  )
+    return (
+        <>
+            <Navigation />
+            <div>Homepage</div>
+        </>
+    )
 }
 
 export default Homepage
