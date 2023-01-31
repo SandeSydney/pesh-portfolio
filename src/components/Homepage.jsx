@@ -7,7 +7,7 @@ function Homepage() {
             <Navigation />
 
             {/* Hero Section */}
-            <section className='hero p-20 h-screen bg-gradient-to-r from-violet-500 to-fuchsia-500 flex flex-col justify-center items-center'>
+            <section className='hero p-20 h-[85vh] bg-gradient-to-r from-violet-500 to-fuchsia-500 flex flex-col justify-center items-center'>
                 <div className='flex-1 flex flex-col justify-center items-center text-white space-y-5'>
                     <p className='text-4xl opacity-70 uppercase text-center md:text-7xl'>Hello, I'm Patience Zawadi</p>
                     <p className='text-center md:text-4xl '>Software Copywriter | Technical Writer | Proof-reader</p>
@@ -23,7 +23,14 @@ function Homepage() {
                 <p className='max-w-3xl'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </section>
 
-            <section className='min-h-screen bg-white'></section>
+            <section className='container mx-auto py-8 min-h-screen bg-white'>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 1</div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 2</div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 3</div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 4</div>
+                </div>
+            </section>
         </>
     )
 }
