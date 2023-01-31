@@ -4,7 +4,7 @@ import brand from "../assets/Brand.png"
 
 function Navigation() {
   return (
-    <nav className="relative border-b-2 flex py-5 items-center">
+    <nav className="relative container mx-auto border-b-2 flex py-5 items-center">
       <div className='flex-1 flex gap-10'>
         <Link to={"/"}>
           <img className='mx-3 w-1/3' src={brand} alt="Logo" />
