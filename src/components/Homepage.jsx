@@ -1,7 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Navigation from './Navigation'
+import { percentageCounter } from './PercentageCounter'
 
 function Homepage() {
+    useEffect(()=>{
+        percentageCounter()
+    },[])
     return (
         <>
             <Navigation />
@@ -12,24 +16,45 @@ function Homepage() {
                     <p className='text-4xl opacity-70 uppercase text-center md:text-7xl'>Hello, I'm Patience Zawadi</p>
                     <p className='text-center md:text-4xl '>Software Copywriter | Technical Writer | Proof-reader</p>
                 </div>
-                <a className='border text-white mb-20 px-5 py-2 rounded uppercase animate-bounce hover:px-8 hover:animate-none' href="">Let's Talk</a>
+                <a className='border-2 text-white mb-20 px-5 py-2 rounded uppercase animate-bounce hover:px-8 hover:animate-none' href="">Let's Talk</a>
             </section>
 
             <section className="bg-[#f0f0f0] p-20 min-h-screen flex flex-col justify-center items-center space-y-8 text-lg px-8">
-                <h2 className='text-4xl text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</h2>
-                <hr className='w-12 h-2 bg-[#F46624] rounded'/>
+                <h2 className='text-2xl text-center'><b>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</b></h2>
+                <hr className='w-12 h-2 bg-[#F46624] rounded' />
                 <p className='max-w-3xl'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <p className='max-w-3xl'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
                 <p className='max-w-3xl'>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</p>
             </section>
 
             <section className='container mx-auto py-8 min-h-screen bg-white'>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4">
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 1</div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 2</div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 3</div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-center'>Item 4</div>
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-10">
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                        <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="69">0</span>%</p>
+                        <p className='text-lg'>
+                            of marketers say converting leads into customers is their top priority
+                        </p>
+                    </div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                        <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="33">0</span>%</p>
+                        <p className='text-lg'>
+                            of a sales rep's time is wasted creating or looking for content to share with prospects
+                        </p>
+                    </div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                        <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="90">0</span>%</p>
+                        <p className='text-lg'>
+                            of content created by marketing is ignored by sales reps and never shown to prospects
+                        </p>
+                    </div>
+                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                        <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="50">0</span>%</p>
+                        <p className='text-lg'>
+                            more sales-ready leads is what firms generate by investing in sales-driven lead nurturing
+                        </p>
+                    </div>
                 </div>
+                <div className='text-center'><h2 className='text-2xl'><b>My Services</b></h2></div>
             </section>
         </>
     )
