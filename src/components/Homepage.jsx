@@ -1,11 +1,14 @@
 import React, { useEffect } from 'react'
 import Navigation from './Navigation'
 import { percentageCounter } from './PercentageCounter'
+import copywriter from '../assets/copywriter.png'
+import techwriting from '../assets/article-writing.png'
+import proofreading from '../assets/proof-reader.png'
 
 function Homepage() {
-    useEffect(()=>{
+    useEffect(() => {
         percentageCounter()
-    },[])
+    }, [])
     return (
         <>
             <Navigation />
@@ -29,25 +32,25 @@ function Homepage() {
 
             <section className='container mx-auto py-8 min-h-screen bg-white'>
                 <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-10">
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                    <div className='flex flex-col m-1 h-[20] items-center justify-between text-center space-y-3 p-2'>
                         <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="69">0</span>%</p>
                         <p className='text-lg'>
                             of marketers say converting leads into customers is their top priority
                         </p>
                     </div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                    <div className='flex flex-col m-1 h-[20] items-center justify-between text-center space-y-3 p-2'>
                         <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="33">0</span>%</p>
                         <p className='text-lg'>
                             of a sales rep's time is wasted creating or looking for content to share with prospects
                         </p>
                     </div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                    <div className='flex flex-col m-1 h-[20] items-center justify-between text-center space-y-3 p-2'>
                         <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="90">0</span>%</p>
                         <p className='text-lg'>
                             of content created by marketing is ignored by sales reps and never shown to prospects
                         </p>
                     </div>
-                    <div className='flex flex-col m-1 h-[30vh] items-center justify-between text-center space-y-3 p-2'>
+                    <div className='flex flex-col m-1 h-[20] items-center justify-between text-center space-y-3 p-2'>
                         <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="50">0</span>%</p>
                         <p className='text-lg'>
                             more sales-ready leads is what firms generate by investing in sales-driven lead nurturing
@@ -55,6 +58,26 @@ function Homepage() {
                     </div>
                 </div>
                 <div className='text-center'><h2 className='text-2xl'><b>My Services</b></h2></div>
+                <div className="grid grid-cols-1 md:grid-cols-3 my-10">
+                    <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
+                        <img className='h-30%] w-[25%]' src={techwriting} alt="" />
+                        <p className='text-2xl'><b>Software Copywriting</b></p>
+                        <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
+                        <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
+                    </div>
+                    <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
+                        <img className='h-30%] w-[25%]' src={copywriter} alt="" />
+                        <p className='text-2xl'><b>Technical Writing</b></p>
+                        <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
+                        <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
+                    </div>
+                    <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
+                        <img className='h-30%] w-[25%]' src={proofreading} alt="" />
+                        <p className='text-2xl'><b>Proof Reading</b></p>
+                        <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
+                        <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
+                    </div>
+                </div>
             </section>
         </>
     )
