@@ -31,7 +31,7 @@ function Homepage() {
             </section>
 
             <section className='container mx-auto py-8 min-h-screen bg-white'>
-                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-10">
+                <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 my-10 p-4">
                     <div className='flex flex-col m-1 h-[20] items-center justify-between text-center space-y-3 p-2'>
                         <p className="text-7xl text-[#7ebec5]"><span className='percentage' data-value="69">0</span>%</p>
                         <p className='text-lg'>
@@ -61,19 +61,19 @@ function Homepage() {
                 <div className="grid grid-cols-1 md:grid-cols-3 my-10">
                     <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
                         <img className='h-30%] w-[25%]' src={techwriting} alt="" />
-                        <p className='text-2xl'><b>Software Copywriting</b></p>
+                        <p className='text-xl'><b>Software Copywriting</b></p>
                         <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
                         <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
                     </div>
                     <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
                         <img className='h-30%] w-[25%]' src={copywriter} alt="" />
-                        <p className='text-2xl'><b>Technical Writing</b></p>
+                        <p className='text-xl'><b>Technical Writing</b></p>
                         <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
                         <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
                     </div>
                     <div className="border shadow-md rounded p-2 flex flex-col m-2 h-fit md:h-[45vh] items-center space-y-3">
                         <img className='h-30%] w-[25%]' src={proofreading} alt="" />
-                        <p className='text-2xl'><b>Proof Reading</b></p>
+                        <p className='text-xl'><b>Proof Reading</b></p>
                         <p className='text-center'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Commodi cumque excepturi ad. Labore tempora assumenda nesciunt nostrum rerum odio corporis temporibus tenetur, iusto doloribus sapiente alias recusandae similique dolore sunt!</p>
                         <button className='bg-blue-700 hover:bg-blue-500 px-5 py-2 text-white rounded'>More</button>
                     </div>
